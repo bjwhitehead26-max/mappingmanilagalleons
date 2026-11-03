@@ -11,3 +11,6 @@ menu:
   - title_en: "About"
     titulo_es: "About"
     url: "/about/"
+  - title_en: "N"
+    titulo_es: "N"
+    url: "/n/"
