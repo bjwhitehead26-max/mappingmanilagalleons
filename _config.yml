@@ -7,11 +7,11 @@ description: "Mappingmanilagalleons"
 url: "https://bjwhitehead26-max.github.io"
 baseurl: "/mappingmanilagalleons"
 author: "bjwhitehead26-max"
-email: ""
-telar_theme: "austin" # Options: trama, paisajes, neogranadina, santa-barbara, austin, or custom
+email: "bjw3423@my.utexas.edu"
+telar_theme: "austin"
 logo: ""
-telar_language: "en" # Options: "en" (English), "es" (Español)
-collection_mode: false # Set to true to show objects first with large thumbnails and stories below with small thumbnails (collection-first homepage)
+telar_language: en
+collection_mode: false
 
 # Story Interface Settings
 story_interface:
