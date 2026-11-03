@@ -33,10 +33,11 @@
  *
  * Bundled by esbuild into assets/js/share-panel.js; see assets/js/README.md.
  *
- * Version: v1.7.0
+ * Version: v1.8.3
  */
 
 import { warningState, setWarning } from './warnings.js';
+import { escapeHtml } from '../objects-filter/escape.js';
 
 /** One share panel's link and embed controls over the page it is given. */
 export function createSharePanel({
@@ -54,6 +55,8 @@ export function createSharePanel({
 
   // DOM elements
   const sharePanel = doc.getElementById('panel-share');
+  // What to say where the browser cannot copy, in the site's language.
+  const copyManually = sharePanel?.dataset.copyManually;
 
   // Check if we're on a story page or homepage
   const isStoryPage = doc.body.classList.contains('story-page') ||
@@ -417,8 +420,10 @@ export function createSharePanel({
     const shareSiteUrlInput = doc.getElementById('share-site-url-input');
     if (!shareSiteUrlInput) return;
 
-    const pathParts = win.location.pathname.split('/').filter(p => p);
-    const baseUrl = win.location.origin + (pathParts.length > 0 ? '/' + pathParts[0] + '/' : '/');
+    // The layout's baseurl is the site's prefix; the first path segment is
+    // only that prefix on a site served under one.
+    const baseurlMeta = doc.querySelector('meta[name="baseurl"]');
+    const baseUrl = win.location.origin + (baseurlMeta ? baseurlMeta.content : '') + '/';
     shareSiteUrlInput.value = baseUrl;
   }
 
@@ -447,15 +452,6 @@ export function createSharePanel({
     }
   }
 
-  // Escape a value for safe inclusion in a double-quoted HTML attribute.
-  // Twin of escapeHtml in objects-filter/escape.js, which the objects gallery's
-  // own bundle holds; the two bundles are separate, so keep them in sync.
-  function escapeAttr(text) {
-    const div = doc.createElement('div');
-    div.textContent = text == null ? '' : String(text);
-    return div.innerHTML.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-  }
-
   /**
    * Generate embed code
    */
@@ -480,7 +476,7 @@ export function createSharePanel({
 
     // Get story title for iframe title attribute (escaped for the attribute so a
     // quote in the title can't break the copied embed snippet)
-    const storyTitle = escapeAttr(getStoryTitle());
+    const storyTitle = escapeHtml(getStoryTitle(), doc);
 
     // Generate iframe code
     const iframeCode = `<iframe src="${embedUrl}"
@@ -632,7 +628,7 @@ export function createSharePanel({
     // calling writeText would throw synchronously — before the .catch below
     // could handle it. Guard that case explicitly.
     if (!navigatorRef.clipboard || typeof navigatorRef.clipboard.writeText !== 'function') {
-      alertFn('Please manually copy the text');
+      alertFn(copyManually);
       return;
     }
 
@@ -640,7 +636,7 @@ export function createSharePanel({
       showSuccessFeedback(triggerButton);
     }).catch(err => {
       console.error('[Telar Share] Failed to copy:', err);
-      alertFn('Please manually copy the text');
+      alertFn(copyManually);
     });
   }
 
@@ -648,6 +644,13 @@ export function createSharePanel({
    * Show success feedback
    */
   function showSuccessFeedback(triggerButton) {
+    // The icon is all a sighted reader gets; the status line says it aloud.
+    const status = doc.getElementById('share-copy-status');
+    if (status) {
+      status.textContent = status.dataset.copied;
+      setTimeout(() => { status.textContent = ''; }, 2000);
+    }
+
     // Update button icon temporarily
     const btnIcon = triggerButton.querySelector('.icon');
     if (btnIcon) {
