@@ -1,6 +1,5 @@
 step,object,x,y,zoom,page,question,answer,alt_text,layer1_button,layer1_content,layer2_button,layer2_content,clip_start,clip_end,loop
 paso,objeto,x,y,zoom,pagina,pregunta,respuesta,texto_alt,boton1,contenido1,boton2,contenido2,inicio_clip,fin_clip,bucle
-1,images,0.5,0.5,1,,What is the Nettie Lee Benson Latin American Collection?,,,,,,,,,
-2,,,,,,Early-Modern Pacific Sources in the Benson...,"The Benson contains dozens or more (so I've found thus far) sources related to the Spanish Pacific. These are primarily in the forms of maps, commercial letters, and other administrative sources listed in the guides compiled by famous librarian, ",,,,,,,,
-3,,,,,,Pilot Diaries (,"For my research, I am deeply fascinated in what one seemingly quantitative source reveals about life on the early-modern Pacific Ocean. Pilot navigational diaries are overwhelmingly underutilized by trans-Pacific historians. The reasons for this vary, but most scholars have opted to study global aspects related to the Manila-Acapulco galleon trade often focusing on economic and cultural exchange between East Asia, New Spain, and Peru. ",,Learn more,a-1773-pilot-historiography.md,,,,,
-4,untitled,0.5,0.5,1,,"The Diary of the 1773 Voyage: The frigate, ","This diary was created by the pilots of the frigate, ",,,,,,,,
+1,untitled,0.4387682525271467,0.27100117196303797,2.25,,"The Diary of the 1773 Voyage of the vessel, ","This diary offers a sporadic day-by-day account of a late-eighteenth century trans-Pacific voyage from Manila to New Spain. Using a source like this, we can reconstruct the Pacific Ocean and navigational practices through the eyes of the head pilots of the vessel.",,Learn more,a-1773-pilot-significance-of-a.md,,,,,
+2,20260418-123206,0.5268126835278107,0.5210276844231593,1.3020833333333328,,Significance of a Frigate?,,,,,,,,,
+3,untitled,0.5268126835278107,0.5210276844231593,1.3020833333333328,,Voyage Statistics,"This ",,,,,,,,
