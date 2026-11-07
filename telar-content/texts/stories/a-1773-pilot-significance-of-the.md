@@ -1,0 +1,5 @@
+---
+title: "Significance of the Frigate..."
+---
+
+The Consolación was a frigate class ship; a warship. By the late eighteenth century, Spanish galleons were being replaced by frigate styled vessels, especially for trade. As this image depicts, later galleons and eventually the frigate were large, with tall masts, and shortened superstructures which made them less top heavy and faster. Furthermore, they were much easier to sail as they adopted the wheel, replacing the centuries-old whip staff. Thus, the Consolación would have been much faster than its predecessors. Furthermore, the fact that the frigate sailed south with a mission to explore and document islands near Mindanao also reveals an expanding interest in royal officials to use warships for both facilitating this lucrative commercial trade, and as scouting agents.
