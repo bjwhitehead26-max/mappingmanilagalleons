@@ -1,0 +1,5 @@
+---
+title: "Who were they for? Why were they written?"
+---
+
+Once the galleons reached New Spain, these accounts were collected by viceregal and royal authorities and ultimatley sent to Spain where the Council of the Indies (the court and governing body for royal administration of the Spanish Indies) would analyze them. They seve as both a useful tool for pilots to track their routes, but also as a way for officials in Spain, and the King himself, to better understand a signifcant trade route in the farthest reaches of the empire. The Manila-Acapulco galleons alone carried 30 % of the global silver supply from Mexico to east Asia for the empire to recieve tons of oriental goods in exchange (silks, spices, ivory, porcelein, and much more). The infromation in the documents also proved useful for expanding cosmographical perceptions of the farthest expanses of the mpire as they engaged in protracted conflicts with other European powers throughout the 250 year long trade.
