@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Historiography"
 ---
 
 Within the historiography of trans-Pacific studies, the actual annual voyages of the Manila-Acapulco galleons have received little attention. Furthermore, pilot navigational diaries and route guides are overwhelmingly underutilized by historians. The reasons for this vary, but most scholars have opted to study global aspects related to the trade often focusing on economic and cultural exchange between East Asia, New Spain, and Peru. However, I argue that studies related to the silver flows, cultural exchanges, or demographic movements should always situate the voyages at the center. It was these annual voyages, the galleons and crews combined as a unit, that made that exchange possible. The long voyages were collaborative knowledge-producing experiences that rquired all particpants from the Filipino, Amerindian, Chinese, or Japonese to Creole or Spanish sailors and officals to work together to achieve the collective goal of reaching New Spain or Manila. With each voyage, the pilots and the crews reconstructed their individual worldviews of the Pacific. My research will contribute to the field by linking these broader studies together through analyzing the actual experiences and mechanized movements of the annual voyages that facilitated that exchange.
